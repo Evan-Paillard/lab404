@@ -2,6 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../../base
+  - require-image-digests.yaml
+  - verify-image-signatures.yaml
 images:
   - name: ghcr.io/leofvo/lab404-web
     newName: ghcr.io/evan-paillard/lab404-web
@@ -9,3 +11,7 @@ images:
   - name: ghcr.io/leofvo/lab404-votes
     newName: ghcr.io/evan-paillard/lab404-votes
     digest: sha256:61d1f9f9b062040737b0c017881cd8952f9f48a06e061875706b29da7e480c22
+  - name: nginx
+    digest: sha256:4c41e2d0a3a55b325ed572cd0200bdb72af1433c3daa2bca6ef8eea68ce504a2
+  - name: valkey/valkey
+    digest: sha256:2602ace2be6569bc2bbb06f873776516ab9089821525be34f4305c67eb9db02a
