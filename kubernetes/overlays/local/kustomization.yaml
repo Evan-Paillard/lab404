@@ -5,8 +5,7 @@ resources:
 images:
   - name: ghcr.io/leofvo/lab404-web
     newName: ghcr.io/evan-paillard/lab404-web
-    newTag: latest
+    digest: sha256:f03a3aab688799fc277da939d7538ead9f31d7b3c81d3ae03a8e4cd2e3f267db
   - name: ghcr.io/leofvo/lab404-votes
     newName: ghcr.io/evan-paillard/lab404-votes
-    newTag: latest
-
+    digest: sha256:61d1f9f9b062040737b0c017881cd8952f9f48a06e061875706b29da7e480c22
