@@ -35,11 +35,11 @@ spec:
               drop: [ALL]
           resources:
             requests:
-              cpu: 10m
-              memory: 16Mi
+              cpu: 5m
+              memory: 24Mi
             limits:
-              cpu: 100m
-              memory: 64Mi
+              cpu: 50m
+              memory: 48Mi
           ports:
             - name: http
               containerPort: 80

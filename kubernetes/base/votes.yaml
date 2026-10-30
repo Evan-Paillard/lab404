@@ -39,8 +39,8 @@ spec:
               cpu: 10m
               memory: 16Mi
             limits:
-              cpu: 200m
-              memory: 64Mi
+              cpu: 100m
+              memory: 48Mi
           env:
             - name: VALKEY_ADDR
               value: valkey:6379
