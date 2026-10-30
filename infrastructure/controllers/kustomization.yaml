@@ -41,3 +41,11 @@ helmCharts:
     namespace: sealed-secrets
     includeCRDs: true
     skipTests: true
+  - name: falco
+    repo: https://falcosecurity.github.io/charts
+    version: 9.2.0
+    releaseName: falco
+    namespace: falco
+    includeCRDs: true
+    skipTests: true
+    valuesFile: falco-values.yaml
