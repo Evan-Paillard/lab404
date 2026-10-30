@@ -8,3 +8,6 @@ resources:
   - valkey.yaml
   - gateway.yaml
   - nginx.yaml
+  - netpol-defaults.yaml
+  - netpol-ingress.yaml
+  - netpol-egress.yaml
